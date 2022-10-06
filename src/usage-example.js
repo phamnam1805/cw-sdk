@@ -8,7 +8,7 @@ const MNEMONIC1 = process.env.MNEMONIC1;
 async function main() {
     let cosm = await Cosm.init(malagaChain, MNEMONIC1);
     // deploy
-    // console.log(await cosm.instantiateContract(instantiateCw20, 300000));
+    // console.log(await cosm.initContract(instantiateCw20, 300000));
 
     // execute
     // console.log(await cosm.execute(executeMint));

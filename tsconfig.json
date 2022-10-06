@@ -18,6 +18,6 @@
         "esm": true
     },
     "include": ["src/*.ts"],
-    "files": ["src/lib/cw-lib.ts"],
+    "files": ["src/lib/cw-lib.ts", "src/lib/chain.ts"],
     "exclude": ["node_modules"]
 }

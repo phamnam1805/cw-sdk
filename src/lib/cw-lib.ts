@@ -140,7 +140,7 @@ export class Cosm {
         return rs;
     };
 
-    instantiateContract = async (
+    initContract = async (
         rawObject: object,
         gasLimit?: number
     ): Promise<InstantiateResult> => {
