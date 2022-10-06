@@ -1,12 +1,11 @@
 const { Cosm } = require("./lib/cw-lib");
 const { malagaChain } = require("./lib/chain");
-const { instantiateCw20 } = require("./instantiate-template");
-const { executeMint } = require("./execute-template");
-const { queryBalance } = require("./query-template")
+const message = require("./index.js");
 require("dotenv").config();
 const MNEMONIC1 = process.env.MNEMONIC1;
 async function main() {
-    let cosm = await Cosm.init(malagaChain, MNEMONIC1);
+    console.log(message);
+    // let cosm = await Cosm.init(malagaChain, MNEMONIC1);
     // deploy
     // console.log(await cosm.initContract(instantiateCw20, 300000));
 
@@ -14,7 +13,7 @@ async function main() {
     // console.log(await cosm.execute(executeMint));
 
     // query
-    console.log(await cosm.query(queryBalance));
+    // console.log(await cosm.query(queryBalance));
 
 }
 main();

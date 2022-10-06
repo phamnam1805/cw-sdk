@@ -40,3 +40,4 @@ export const instantiateCw20 = {
         admin: "wasm1q0wusjw6an9m7h7qtn73y24frxd4g7wzulxgj0"
     }
 }
+
